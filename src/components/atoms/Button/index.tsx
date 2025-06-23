@@ -3,7 +3,7 @@ import React from 'react';
 
 const Button = ({text, color = '#02CF8E', buttonColor = '#020202'}) => {
   return (
-    <TouchableOpacity style={styles.button(color)} activeOpacity={0.7}>
+    <TouchableOpacity style={styles.button(color)} activeOpacity={0.5}>
       <Text style={styles.buttonText(buttonColor)}>{text}</Text>
     </TouchableOpacity>
   );
@@ -16,8 +16,6 @@ const styles = StyleSheet.create({
     backgroundColor: color,
     paddingVertical: 12,
     borderRadius: 8,
-    justifyContent: 'center',
-    alignItems: 'center',
   }),
   buttonText: buttonColor => ({
     color: buttonColor,
